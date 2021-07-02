@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en, pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="./Img/icon.jpg">
+        <script>
+            alert('Olá usuário!')
+            let nome;
+            nome = prompt("Bem vindo (a/e)! Qual é o seu nome?");
+
+            let anoDeNascimento;
+            anoDeNascimento = prompt("Em que ano você nasceu?");
+
+            let anoAtual = '2021'
+            let idade = anoAtual - anoDeNascimento;
+
+            alert(`Olá! O seu nome é ${nome} e você tem ${idade} anos`)
+        </script>
+        <!--Recriação da interface da Netflix :)-->
+        <title>Netflix</title>
+    </head>
+    <body>
+        <!--Topo-->
+        <header class="topo">
+            <img src="./Img/netflix.svg" alt="Netflix imagem." draggable="false">
+            <a href="https://www.netflix.com/browse" class="entrar">Entrar</a>
+        </header>
+        <!--Parte principal-->
+        <main class="main">
+            <div class="main-child">
+                <h1>Filmes, séries e muito mais. Sem limites.</h1>
+                <span>Assista onde quiser. Cancele quando quiser.</span>
+                <form class="form-cta">
+                    <input type="text" placeholder="Email">
+                    <button>Vamos lá</button>
+                </form>
+                <p>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+            </div>    
+                <div class="gradiente"></div>
+        </main>
+        <!--Primeira parte inferior-->
+        <section class="device-pile secao">
+            <div class="container">
+                <div class="grid">
+                    <div>
+                        <h1>Aproveite na TV.</h1>
+                        <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</p>
+                    </div> 
+                    <div class="img-tv">
+                        <img src="./Img/tv.png" alt="televisao-netflix">  
+                        <video class="video-tv" autoplay playsinline muted loop>
+                            <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4">
+                        </video> 
+                    </div>       
+                </div>
+            </div>
+        </section>
+        <!--Segunda parte inferior-->
+        <section class="secao">
+            <div class="container">
+                <div class="grid">
+                    <div>
+                        <h1>Baixe séries para assistir offline</h1>
+                        <p>Salve seus títulos favoritos e sempre tenha algo para assistir.</p>
+                    </div> 
+                    <div class="img-tv">
+                        <img src="./Img/Eleven.jpg" alt="Eleven">  
+                    </div>       
+                </div>
+            </div>
+        </section>
+        <!--Terceira parte inferior-->
+        <section class="secao">
+            <div class="container">
+                <div class="grid">
+                    <div>
+                        <h1>Assista quando quiser.</h1>
+                        <p>Assista no celular, tablet, smart tv ou notebook sem pagar a mais por isso.</p>
+                    </div> 
+                    <div class="img-tv">
+                        <img src="./Img/Pc.png" alt="PC-netflix"> 
+                        <video class="video-tv1" autoplay playsinline muted loop><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" type="video/mp4"></video>
+                    </div>       
+                </div>
+            </div>
+        </section>
+        <footer class="rodapé">
+            <form class="form-cta">
+                <input type="text" placeholder="Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.">
+                <button>Vamos lá</button>
+            </form>
+            <p>Copyright © 2020 Netflix</p>
+        </footer>
+</body>
+</html>
